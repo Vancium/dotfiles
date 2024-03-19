@@ -56,4 +56,14 @@ M.cssls = {
 	end,
 }
 
+M.pyright = {
+	setup = function()
+		require("lspconfig").pyright.seup({
+
+			capabilities = require("cmp_nvim_lsp").default_capabilities(),
+			settings = {},
+		})
+	end,
+}
+
 return M

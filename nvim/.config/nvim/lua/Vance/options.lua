@@ -32,7 +32,7 @@ opt.hlsearch = false
 opt.showmode = false
 
 -- Save undo history
-vim.opt.undofile = true
+opt.undofile = true
 
 -- Case Sensitivity
 opt.ignorecase = true
@@ -51,7 +51,7 @@ vim.opt.list = true
 vim.opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
 
 -- Minimal number of screen lines to keep above and below the cursor.
-opt.scrolloff = 10
+opt.scrolloff = 8
 
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
