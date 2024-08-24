@@ -2,6 +2,8 @@ return {
 	"nvim-lualine/lualine.nvim",
 	dependencies = { "nvim-tree/nvim-web-devicons" },
 	config = function()
+		local arrow = require("arrow.statusline")
+		local a = arrow.text_for_statusline_with_icons()
 		require("lualine").setup({
 			options = {
 				icons_enabled = true,

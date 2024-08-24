@@ -11,12 +11,14 @@ return {
 		"saadparwaiz1/cmp_luasnip",
 		"folke/neodev.nvim",
 		"j-hui/fidget.nvim",
+		"stevearc/conform.nvim",
 	},
 	config = function()
 		local lsp_capabilities = require("cmp_nvim_lsp").default_capabilities()
 		local servers = require("plugins.lsp.servers")
 		require("plugins.lsp.fidget").setup()
 		require("plugins.lsp.neodev").setup()
+		require("plugins.lsp.auto-format").setup()
 
 		local border = {
 			{ "🭽", "FloatBorder" },

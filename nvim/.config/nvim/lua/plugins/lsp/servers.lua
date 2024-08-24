@@ -27,6 +27,16 @@ M.cmake = {
 	end,
 }
 
+M.pyright = {
+	setup = function()
+		require("lspconfig").pyright.setup({
+
+			capabilities = require("cmp_nvim_lsp").default_capabilities(),
+			settings = {},
+		})
+	end,
+}
+
 M.tsserver = {
 	setup = function()
 		require("lspconfig").tsserver.setup({
@@ -38,28 +48,7 @@ M.tsserver = {
 
 M.html = {
 	setup = function()
-		require("lspconfig").html.seup({
-
-			capabilities = require("cmp_nvim_lsp").default_capabilities(),
-			settings = {},
-		})
-	end,
-}
-
-M.cssls = {
-	setup = function()
-		require("lspconfig").css.seup({
-
-			capabilities = require("cmp_nvim_lsp").default_capabilities(),
-			settings = {},
-		})
-	end,
-}
-
-M.pyright = {
-	setup = function()
-		require("lspconfig").pyright.seup({
-
+		require("lspconfig").html.setup({
 			capabilities = require("cmp_nvim_lsp").default_capabilities(),
 			settings = {},
 		})
